@@ -1,7 +1,7 @@
 from .settings import user_status, id_admins, dispatcher, bot, list_code, quiz_dict, result_dict
 from aiogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 
-@dispatcher.message()
+@dispatcher.message() 
 # Оброблюємо усі повідомлення
 async def handler_message(message:Message):
     id = message.from_user.id 
